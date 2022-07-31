@@ -35,9 +35,9 @@ class ViewController: UIViewController {
     
    
     @IBAction func changeButton() {
-        if counter >= 0 {
+        if counter >= 0 || <= 1 { // Почему я так не могу сделать
             redLightView.alpha = 1
-            if counter == 2 {
+            if counter >= 1 {
                 yellowLightView.alpha = 1
                 if counter == 3 {
                     greenLightView.alpha = 1
